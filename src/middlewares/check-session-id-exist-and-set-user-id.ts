@@ -17,7 +17,7 @@ export async function checkSessionIdExistAndSetUserID(
     })
   }
 
-  const [user] = await knex('users').where('session_id', sessionId).select('id')
+  const [user] = await knex('users').where('session_id', sessionId).select()
 
   if (user === undefined) {
     return res.status(422).send({

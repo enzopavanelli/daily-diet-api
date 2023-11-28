@@ -6,24 +6,28 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "lint": "eslint src --ext .ts --fix",
-    "knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts"
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile ./knexfile.ts",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cookie": "^9.1.0",
     "dotenv": "^16.3.1",
     "fastify": "^4.24.3",
     "knex": "^3.0.1",
     "sqlite3": "^5.1.6",
-    "zod": "^3.22.4",
-    "@fastify/cookie": "^9.1.0"
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "^20.9.0",
+    "@types/supertest": "^2.0.16",
     "eslint": "^8.53.0",
+    "supertest": "^6.3.3",
     "tsx": "^4.1.2",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.6"
   }
 }
