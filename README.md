@@ -63,7 +63,7 @@ POST /users
 
 - Listar todos os usuários
 ```
-POST /users
+GET /users
 ```
 
 - Criar novo registro de refeição
